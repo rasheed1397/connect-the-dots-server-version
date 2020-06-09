@@ -1,5 +1,21 @@
 'use strict';
 
+module.exports = {
+    addAllPoints,
+    addDiagonalLinePoints,
+    addStraigthLinePoints,
+    DiagonalLineCrossDetected,
+    isDiagonalLine,
+    isStraightLine,
+    isGameOver,
+    moreMovesFromThisEnd,
+    nonNodeCrossDetected,
+    pointExists,
+    straightLineCrossDetected,
+    updateEndPoints,
+    validMove,
+    validStartNode
+};
 function isStraightLine(startPoint,endPoint) //check if a line is perpendicular or parallel to the x or y axis
 {
     if((startPoint.x === endPoint.x || startPoint.y === endPoint.y) && (JSON.stringify(endPoint).localeCompare(JSON.stringify(startPoint)) !== 0))
